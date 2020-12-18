@@ -165,7 +165,8 @@ def comparePlayerSeason(player_ids, season1 = 2019, season2=2018):
             games2 = stats2.get('games_played')
             rebounds2 = stats2.get('reb')
         else:
-
+  
+            #return render_template('nameerror.html',name = 'This player')
             continue
 
         # points1 = stats1.get('pts')
