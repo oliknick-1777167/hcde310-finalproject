@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+    .rounded-input{
+        padding:10px;
+        border-radius:5px;
+        box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+
+    }
+
+    label{
+
+        display: inline-block;
+        float: left;
+        clear: left;
+        width: 250px;
+        text-align: right;
+        color: #0000FF;
+
+    }
+    input[type = 'submit']{
+        background-color: #0000FF;
+        color: white;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 310px;
+    }
+    input{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display:inline-block;
+        *display: inline;
+        zoom:1;
+        vertical-align:middle;
+        margin-left:20px;
+        margin-right: 20px;
+
+
+    }
+</style>
+
+<title>{{page_title}}</title>
+    <header style="margin-left: 19px; padding: 60px;font-size: 20px; color:#0000FF">Enter a player first or last name and two seasons to compare stats</header>
+</head>
+<body style="background-color: #dbf3fa; padding: 60px;font-size: 16px">
+<form action="gresponse" method="get" style="align-content: center" >
+    <label for="username">Player First OR Last Name </label>
+    <input type="text" class = "rounded-input" id="username" name="username" placeholder="e.g. Lebron or Curry"/><br />
+    <label for="season1">Season 1</label>
+    <input type="text" id="season1" name="season1" class="rounded-input" placeholder="eg. 2019"/><br />
+    <label for="season2">Season 2</label>
+    <input type="text" id="season2" name="season2" class="rounded-input" placeholder="eg. 2018" /><br />
+    <input type="submit" value="See the Stats!" name="gobtn" style="padding: 15px; size: 20px"/> </form>
+
+{% if prompt %}
+<div class= 'formtitle'>{{prompt}}</div>
+{% endif %}
+</body>
+</html>

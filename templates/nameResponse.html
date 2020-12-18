@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Name Response</title>
+    <header style="text-align: center; padding: 60px;font-size: 20px">Which Player Did you mean?</header>
+</head>
+<body style="background-color: #4aa3df; padding: 60px;font-size: 16px">
+<form action="gresponse" method="get" style="text-align: center">
+    <label for="username">Which player(s) would you like stats for?</label>
+    <input type="text" id="username" name="username" /><br />
+    <input type="submit" value="Go" name="gobtn" style="padding: 15px; size: 20px"/> </form>
+
+    {% for user in ids %}
+        <input type="checkbox" name="name" value="name" id="name"/>
+	        <label for="name">{{fullname}}</label><br />
+    {% endfor %}
+    <script>
+
+    </script>
+{% if prompt %}
+<div class= 'formtitle'>{{prompt}}</div>
+{% endif %}
+</body>
+</html>

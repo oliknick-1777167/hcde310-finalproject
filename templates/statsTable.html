@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Season Averages for Player</title>
+</head>
+
+<style>
+    .content-table{
+        border-collapse: collapse;
+        margin: 25px 0;
+        width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+    }
+    .content-table thead tr {
+        bacground-color: #009879;
+        color: white;
+        text-align: left;
+    }
+    .content-table th,
+    .content-table td {
+        padding: 12px 12px;
+    }
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+</style>
+<body>
+        <table class= "content-table">
+            <tr>
+                <th>Season</th>
+                <th>Games Played</th>
+                <th>Points</th>
+                <th>Assists</th>
+                <th>Rebounds</th>
+                <th>fg percentage</th>
+                <th>3 pt made</th>
+                <th>3 pt percentage</th>
+            </tr>
+            <tr>
+                <td>{{season}}</td>
+                <td>{{gp}}</td>
+                <td>{{points}}</td>
+                <td>{{assists}}</td>
+                <td>{{rebounds}}</td>
+                <td>{{fgpercent}}</td>
+                <td>{{threesMade}}</td>
+                <td>{{threePercent}}</td>
+            </tr>
+            <tr>
+                <td>{{season2}}</td>
+                <td>{{gp2}}</td>
+                <td>{{points2}}</td>
+                <td>{{assists2}}</td>
+                <td>{{rebounds2}}</td>
+                <td>{{fgpercent2}}</td>
+                <td>{{threesMade2}}</td>
+                <td>{{threePercent2}}</td>
+            </tr>
+        </table>
+</body>
+</html>
